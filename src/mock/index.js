@@ -11,4 +11,4 @@ Mock.mock("/api/list", "get", {
   ],
 });
 
-console.log("Mock.js 已拦截 /api/list 请求并返回数据");
+// console.log("Mock.js 已拦截 /api/list 请求并返回数据");

@@ -2,7 +2,11 @@
   <div>
     <h2>用户列表</h2>
     <ul v-if="users.length">
-      <li v-for="user in users" :key="user.id">
+      <li
+        v-for="user in users"
+        :key="user.id"
+        v-track="{ ...trackData, id: user.id }"
+      >
         {{ user.name }} - {{ user.age }} 岁 - {{ user.city }}
       </li>
     </ul>
@@ -32,8 +36,16 @@ export default {
       fetchData();
     });
 
+    const trackData = {
+      eventTypes: ["show", "click"],
+      aid: "aid",
+      pid: "pid",
+      content: "用户列表",
+    };
+
     return {
       users,
+      trackData,
     };
   },
 };
