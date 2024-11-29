@@ -5,6 +5,7 @@ import "./reset.css";
 import "./style.css";
 import App from "./App.vue";
 import "./mock";
+import "./mock/customer.js";
 import directives from "./directives";
 
 const app = createApp(App);
