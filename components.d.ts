@@ -7,14 +7,16 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    A: typeof import('./src/components/a.vue')['default']
     AButton: typeof import('ant-design-vue/es')['Button']
     AModal: typeof import('ant-design-vue/es')['Modal']
     Ant: typeof import('./src/components/Ant.vue')['default']
+    AntIcon: typeof import('./src/components/AntIcon.vue')['default']
     AntModal: typeof import('./src/components/AntModal.vue')['default']
+    AntRedio: typeof import('./src/components/AntRedio.vue')['default']
     AntTable: typeof import('./src/components/AntTable.vue')['default']
-    AStep: typeof import('ant-design-vue/es')['Step']
-    copy: typeof import('./src/components/CustomModal copy.vue')['default']
+    ARadioButton: typeof import('ant-design-vue/es')['RadioButton']
+    ARadioGroup: typeof import('ant-design-vue/es')['RadioGroup']
+    copy: typeof import('./src/components/Ant copy.vue')['default']
     Counter: typeof import('./src/components/Counter.vue')['default']
     CustomModal: typeof import('./src/components/CustomModal.vue')['default']
     LazyLoadGallery: typeof import('./src/components/LazyLoadGallery.vue')['default']

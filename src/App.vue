@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import AntApp from "@/components/Ant.vue";
-import AntModal from "@/components/AntModal.vue";
+// import AntApp from "@/components/Ant.vue";
+import AntIcon from "@/components/AntIcon.vue";
+// import AntRedio from "@/components/AntRedio.vue";
+// import AntModal from "@/components/AntModal.vue";
 // import Counter from "@/components/Counter.vue";
 // import ListComponent from "@/components/ListComponent.vue";
 // import LazyLoadGallery from "@/components/LazyLoadGallery.vue";
@@ -8,7 +10,9 @@ import AntModal from "@/components/AntModal.vue";
 
 <template>
   <!-- <AntApp /> -->
-  <AntModal />
+   <AntIcon />
+  <!-- <AntRedio /> -->
+  <!-- <AntModal /> -->
   <!-- <Counter msg="Vite" /> -->
   <!-- <ListComponent /> -->
   <!-- <LazyLoadGallery /> -->
