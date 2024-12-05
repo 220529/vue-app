@@ -1,19 +1,37 @@
 <script setup lang="ts">
-// import AntApp from "@/components/Ant.vue";
-import AntIcon from "@/components/AntIcon.vue";
-// import AntRedio from "@/components/AntRedio.vue";
-// import AntModal from "@/components/AntModal.vue";
 // import Counter from "@/components/Counter.vue";
+// import SwitchApp from "@/components/switch/index.vue";
 // import ListComponent from "@/components/ListComponent.vue";
 // import LazyLoadGallery from "@/components/LazyLoadGallery.vue";
+
+// import AntdApp from "@/components/antd/index.vue";
+// import AntdIcon from "@/components/antd/icon.vue";
+// import AntdRedio from "@/components/antd/redio.vue";
+// import AntdTable from "@/components/antd/table.vue";
+// import AntdModal from "@/components/antd/modal.vue";
+
+// import EchartsPie from "@/components/echarts/pie.vue";Echarts
+// import EchartsPieFull from "@/components/echarts/pie-full.vue";
+// import EchartsPieLight from "@/components/echarts/pie-light.vue";
+// import EchartsPieCustom from "@/components/echarts/pie-custom.vue";
+// import EchartsBar from "@/components/echarts/bar.vue";
 </script>
 
 <template>
-  <!-- <AntApp /> -->
-   <AntIcon />
-  <!-- <AntRedio /> -->
-  <!-- <AntModal /> -->
   <!-- <Counter msg="Vite" /> -->
   <!-- <ListComponent /> -->
   <!-- <LazyLoadGallery /> -->
+  <!-- <SwitchApp /> -->
+
+  <!-- <EchartsPie /> -->
+  <!-- <EchartsPieFull /> -->
+  <!-- <EchartsPieLight /> -->
+  <!-- <EchartsPieCustom /> -->
+  <!-- <EchartsBar /> -->
+
+  <!-- <AntdApp /> -->
+  <!-- <AntdIcon /> -->
+  <!-- <AntdRedio /> -->
+  <!-- <AntdTable /> -->
+  <!-- <AntdModal /> -->
 </template>
