@@ -3,6 +3,8 @@
 // import SwitchApp from "@/components/switch/index.vue";
 // import ListComponent from "@/components/ListComponent.vue";
 // import LazyLoadGallery from "@/components/LazyLoadGallery.vue";
+// import TimerApp from "@/components/time/index.vue";
+import TextTag from "@/components/TextTag.vue";
 
 // import AntdApp from "@/components/antd/index.vue";
 // import AntdIcon from "@/components/antd/icon.vue";
@@ -22,6 +24,8 @@
   <!-- <ListComponent /> -->
   <!-- <LazyLoadGallery /> -->
   <!-- <SwitchApp /> -->
+  <!-- <TimerApp /> -->
+  <TextTag text="结束" color="blue" />
 
   <!-- <EchartsPie /> -->
   <!-- <EchartsPieFull /> -->

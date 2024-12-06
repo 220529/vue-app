@@ -25,6 +25,7 @@ declare module 'vue' {
     Child: typeof import('./src/components/switch/child.vue')['default']
     copy: typeof import('./src/components/echarts/pie-full copy.vue')['default']
     Counter: typeof import('./src/components/Counter.vue')['default']
+    CountUpTimer: typeof import('./src/components/time/CountUpTimer.vue')['default']
     CustomModal: typeof import('./src/components/antd/CustomModal.vue')['default']
     EchartsApp: typeof import('./src/components/EchartsApp.vue')['default']
     EchartsApp2: typeof import('./src/components/EchartsApp2.vue')['default']
@@ -44,5 +45,9 @@ declare module 'vue' {
     Redio: typeof import('./src/components/antd/redio.vue')['default']
     Switch: typeof import('./src/components/switch/index.vue')['default']
     Table: typeof import('./src/components/antd/table.vue')['default']
+    Tag: typeof import('./src/components/Tag.vue')['default']
+    TextTag: typeof import('./src/components/TextTag.vue')['default']
+    Time: typeof import('./src/components/time/index.vue')['default']
+    Timer: typeof import('./src/components/time/timer.vue')['default']
   }
 }
