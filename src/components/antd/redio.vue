@@ -19,7 +19,10 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 const value1 = ref<string>('a');
 const value2 = ref<string>('c');
+watch(value1, () => {
+  console.log("....", value1.value);
+})
 </script>
