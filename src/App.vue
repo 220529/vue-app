@@ -5,7 +5,7 @@
 // import LazyLoadGallery from "@/components/LazyLoadGallery.vue";
 // import TimerApp from "@/components/time/index.vue";
 // import TextTag from "@/components/TextTag.vue";
-import ComputedApp from "@/components/computed/index.vue";
+// import ComputedApp from "@/components/computed/index.vue";
 // import Vue3CountTo from "@/components/vue3-count-to.vue"
 // import TooltipMultipleApp from "@/components/TooltipMultipleApp.vue"
 // import EmptyApp from "@/components/Empty.vue"
@@ -27,6 +27,8 @@ import ComputedApp from "@/components/computed/index.vue";
 // import EchartsPieCenter from "@/components/echarts/pie-center.vue";
 // import EchartsPieTwo from "@/components/echarts/pie-two.vue";
 // import EchartsBar from "@/components/echarts/bar.vue";
+
+import Designer from "@/components/wa3/designer.vue";
 </script>
 
 <template>
@@ -35,7 +37,7 @@ import ComputedApp from "@/components/computed/index.vue";
   <!-- <LazyLoadGallery /> -->
   <!-- <SwitchApp /> -->
   <!-- <TimerApp /> -->
-  <ComputedApp />
+  <!-- <ComputedApp /> -->
   <!-- <TextTag text="结束" color="blue" /> -->
   <!-- <Vue3CountTo /> -->
   <!-- <TooltipMultipleApp /> -->
@@ -58,4 +60,6 @@ import ComputedApp from "@/components/computed/index.vue";
   <!-- <AntdTimeline /> -->
   <!-- <AntdDrawer /> -->
   <!-- <AntdTooltip /> -->
+
+  <Designer />
 </template>
