@@ -4,6 +4,6 @@ import { CountTo } from 'vue3-count-to';
 
 <template>
     <div>
-        <countTo :startVal='0' :endVal='100' :duration='1000'></countTo>
+        <CountTo :startVal='0' :endVal='100' :duration='1000'></CountTo>
     </div>
 </template>

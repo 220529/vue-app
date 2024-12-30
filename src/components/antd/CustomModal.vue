@@ -4,7 +4,7 @@
     :footer="null"
     destroyOnClose
     class="tt-a-modal"
-    :open="visible"
+    :visible="visible"
     @cancel="handleCancel"
   >
     <div class="tt-a-modal-title">

@@ -5,17 +5,20 @@
 // import LazyLoadGallery from "@/components/LazyLoadGallery.vue";
 // import TimerApp from "@/components/time/index.vue";
 // import TextTag from "@/components/TextTag.vue";
-// import ComputedApp from "@/components/computed/index.vue";
+import ComputedApp from "@/components/computed/index.vue";
 // import Vue3CountTo from "@/components/vue3-count-to.vue"
+// import TooltipMultipleApp from "@/components/TooltipMultipleApp.vue"
+// import EmptyApp from "@/components/Empty.vue"
 
 // import AntdApp from "@/components/antd/index.vue";
 // import AntdIcon from "@/components/antd/icon.vue";
 // import AntdRedio from "@/components/antd/redio.vue";
 // import AntdTable from "@/components/antd/table.vue";
-import AntdModal from "@/components/antd/modal.vue";
+// import AntdModal from "@/components/antd/modal.vue";
 // import AntdForm from "@/components/antd/form.vue";
 // import AntdTimeline from "@/components/antd/timeline.vue";
 // import AntdDrawer from "@/components/antd/drawer.vue";
+// import AntdTooltip from "@/components/antd/tooltip.vue";
 
 // import EchartsPie from "@/components/echarts/pie.vue";Echarts
 // import EchartsPieFull from "@/components/echarts/pie-full.vue";
@@ -32,9 +35,11 @@ import AntdModal from "@/components/antd/modal.vue";
   <!-- <LazyLoadGallery /> -->
   <!-- <SwitchApp /> -->
   <!-- <TimerApp /> -->
-  <!-- <ComputedApp /> -->
+  <ComputedApp />
   <!-- <TextTag text="结束" color="blue" /> -->
   <!-- <Vue3CountTo /> -->
+  <!-- <TooltipMultipleApp /> -->
+  <!-- <EmptyApp /> -->
 
   <!-- <EchartsPie /> -->
   <!-- <EchartsPieFull /> -->
@@ -48,8 +53,9 @@ import AntdModal from "@/components/antd/modal.vue";
   <!-- <AntdIcon /> -->
   <!-- <AntdRedio /> -->
   <!-- <AntdTable /> -->
-  <AntdModal />
+  <!-- <AntdModal /> -->
   <!-- <AntdForm /> -->
   <!-- <AntdTimeline /> -->
-  <AntdDrawer />
+  <!-- <AntdDrawer /> -->
+  <!-- <AntdTooltip /> -->
 </template>
