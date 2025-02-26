@@ -1,4 +1,6 @@
 <script setup lang="ts">
+// import ReactiveaApp from "@/composition/reactive/index.vue"
+
 // import Counter from "@/components/Counter.vue";
 // import SwitchApp from "@/components/switch/index.vue";
 // import ListComponent from "@/components/ListComponent.vue";
@@ -28,10 +30,16 @@
 // import EchartsPieTwo from "@/components/echarts/pie-two.vue";
 // import EchartsBar from "@/components/echarts/bar.vue";
 
-import Designer from "@/components/wa3/designer.vue";
+// import Designer from "@/components/wa3/designer.vue";
+// import Selector from "@/components/Selector.vue";
+import UniverApp from "@/components/univer/index.vue"
 </script>
 
 <template>
+  <UniverApp />
+  <!-- <Selector /> -->
+  <!-- <ReactiveaApp /> -->
+
   <!-- <Counter msg="Vite" /> -->
   <!-- <ListComponent /> -->
   <!-- <LazyLoadGallery /> -->
@@ -61,5 +69,5 @@ import Designer from "@/components/wa3/designer.vue";
   <!-- <AntdDrawer /> -->
   <!-- <AntdTooltip /> -->
 
-  <Designer />
+  <!-- <Designer /> -->
 </template>

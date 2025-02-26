@@ -38,6 +38,7 @@ declare module 'vue' {
     ProgressChild: typeof import('./src/components/wa3/progress-child.vue')['default']
     ProgressGroup: typeof import('./src/components/wa3/progress-group.vue')['default']
     Redio: typeof import('./src/components/antd/redio.vue')['default']
+    Selector: typeof import('./src/components/Selector.vue')['default']
     Switch: typeof import('./src/components/switch/index.vue')['default']
     Table: typeof import('./src/components/antd/table.vue')['default']
     TextTag: typeof import('./src/components/TextTag.vue')['default']
@@ -46,6 +47,7 @@ declare module 'vue' {
     Tooltip: typeof import('./src/components/antd/tooltip.vue')['default']
     TooltipMultiple: typeof import('./src/components/TooltipMultiple.vue')['default']
     TooltipMultipleApp: typeof import('./src/components/TooltipMultipleApp.vue')['default']
+    Univer: typeof import('./src/components/univer/index.vue')['default']
     Vue3CountTo: typeof import('./src/components/vue3-count-to.vue')['default']
     W: typeof import('./src/components/wa3/w.vue')['default']
   }
