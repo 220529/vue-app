@@ -5,20 +5,20 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
+import { defineProps } from "vue";
 const props = defineProps({
   text: {
     type: String,
-    required: true
+    required: true,
   },
   color: {
     type: String,
-    required: true
+    required: true,
   },
   size: {
     type: String,
-    default: "small"
-  }
+    default: "small",
+  },
 });
 </script>
 
@@ -31,7 +31,7 @@ const props = defineProps({
 
   &.blue {
     /* 品牌色 */
-    color: #3175FB;
+    color: #3175fb;
     background-color: rgba(49, 117, 251, 0.2);
   }
 

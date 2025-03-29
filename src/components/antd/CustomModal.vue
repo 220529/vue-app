@@ -14,14 +14,14 @@
     <div class="tt-a-modal-content">
       <slot></slot>
       <!-- 子组件内容 -->
-       <DrawerModal />
+      <DrawerModal />
     </div>
   </a-modal>
 </template>
 
 <script setup lang="ts">
 import { defineProps, defineEmits, watch } from "vue";
-import DrawerModal from "./drawer.vue"
+import DrawerModal from "./drawer.vue";
 // 定义组件的 props
 const props = defineProps({
   title: {
@@ -83,7 +83,7 @@ watch(
   }
   &-content {
     padding: 25px;
-    background: #FFFFFF;
+    background: #ffffff;
   }
 }
 </style>

@@ -4,73 +4,70 @@
       <template v-if="column.dataIndex === 'name'">
         <a>{{ text }}</a>
       </template>
-      <template v-if="column.key === 'address 1'">
-        zzz-{{ text }}
-      </template>
+      <template v-if="column.key === 'address 1'">zzz-{{ text }}</template>
     </template>
   </a-table>
 </template>
 <script lang="ts" setup>
 const columns = [
   {
-    title: 'Name',
-    dataIndex: 'name',
-    key: 'name',
+    title: "Name",
+    dataIndex: "name",
+    key: "name",
   },
   {
-    title: 'Age',
-    dataIndex: 'age',
-    key: 'age',
+    title: "Age",
+    dataIndex: "age",
+    key: "age",
     width: 80,
   },
   {
-    title: 'Address',
-    dataIndex: 'address',
-    key: 'address 1',
+    title: "Address",
+    dataIndex: "address",
+    key: "address 1",
     ellipsis: true,
   },
   {
-    title: 'Long Column Long Column Long Column',
-    dataIndex: 'address',
-    key: 'address 2',
+    title: "Long Column Long Column Long Column",
+    dataIndex: "address",
+    key: "address 2",
     ellipsis: true,
   },
   {
-    title: 'Long Column Long Column',
-    dataIndex: 'address',
-    key: 'address 3',
+    title: "Long Column Long Column",
+    dataIndex: "address",
+    key: "address 3",
     ellipsis: true,
   },
   {
-    title: 'Long Column',
-    dataIndex: 'address',
-    key: 'address 4',
+    title: "Long Column",
+    dataIndex: "address",
+    key: "address 4",
     ellipsis: true,
   },
 ];
 
 const data = [
   {
-    key: '1',
-    name: 'John Brown',
+    key: "1",
+    name: "John Brown",
     age: 32,
-    address: 'New York No. 1 Lake Park, New York No. 1 Lake Park',
-    tags: ['nice', 'developer'],
+    address: "New York No. 1 Lake Park, New York No. 1 Lake Park",
+    tags: ["nice", "developer"],
   },
   {
-    key: '2',
-    name: 'Jim Green',
+    key: "2",
+    name: "Jim Green",
     age: 42,
-    address: 'London No. 2 Lake Park, London No. 2 Lake Park',
-    tags: ['loser'],
+    address: "London No. 2 Lake Park, London No. 2 Lake Park",
+    tags: ["loser"],
   },
   {
-    key: '3',
-    name: 'Joe Black',
+    key: "3",
+    name: "Joe Black",
     age: 32,
-    address: 'Sidney No. 1 Lake Park, Sidney No. 1 Lake Park',
-    tags: ['cool', 'teacher'],
+    address: "Sidney No. 1 Lake Park, Sidney No. 1 Lake Park",
+    tags: ["cool", "teacher"],
   },
 ];
 </script>
-

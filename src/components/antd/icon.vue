@@ -7,5 +7,5 @@
 </template>
 
 <script setup lang="ts">
-import { ExclamationCircleFilled, StarTwoTone } from "@ant-design/icons-vue"
+import { ExclamationCircleFilled, StarTwoTone } from "@ant-design/icons-vue";
 </script>

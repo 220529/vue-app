@@ -1,8 +1,8 @@
 <!-- ChildComponent.vue -->
 <script setup lang="ts">
-import { defineProps } from 'vue';
+import { defineProps } from "vue";
 
-const {data} = defineProps({
+const { data } = defineProps({
   data: Object, // 接收父组件传递的对象
 });
 </script>

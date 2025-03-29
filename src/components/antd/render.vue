@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref, h } from 'vue';
-import { Steps, Tooltip } from 'ant-design-vue';
+import { ref, h } from "vue";
+import { Steps, Tooltip } from "ant-design-vue";
 
 const orderSteps = [
   {
@@ -28,7 +28,10 @@ const orderSteps = [
 const currentStep = ref(2); // 当前步骤
 
 // 自定义 progressDot
-const customProgressDot = (dot: any, { index, status }: { index: number; status: string }) =>
+const customProgressDot = (
+  dot: any,
+  { index, status }: { index: number; status: string }
+) =>
   h(
     Tooltip,
     { title: `步骤 ${index + 1}: ${orderSteps[index].title}` },

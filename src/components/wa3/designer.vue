@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProgressApp from "./progress-group.vue"
+import ProgressApp from "./progress-group.vue";
 </script>
 
 <template>
@@ -15,9 +15,9 @@ import ProgressApp from "./progress-group.vue"
 
 <style scoped lang="less">
 .designers {
-    display: grid;
-    gap: 40px;
-    padding: 50px 35px;
-    grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
-} 
+  display: grid;
+  gap: 40px;
+  padding: 50px 35px;
+  grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
+}
 </style>

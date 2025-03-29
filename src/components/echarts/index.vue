@@ -9,11 +9,11 @@ import EchartsPieFull from "@/components/echarts/pie-full.vue";
 </script>
 
 <template>
-    <!-- <EchartsPie /> -->
-    <EchartsPieFull />
-    <!-- <EchartsPieLight /> -->
-    <!-- <EchartsPieCustom /> -->
-    <!-- <EchartsPieCenter /> -->
-    <!-- <EchartsPieTwo /> -->
-    <!-- <EchartsBar /> -->
+  <!-- <EchartsPie /> -->
+  <EchartsPieFull />
+  <!-- <EchartsPieLight /> -->
+  <!-- <EchartsPieCustom /> -->
+  <!-- <EchartsPieCenter /> -->
+  <!-- <EchartsPieTwo /> -->
+  <!-- <EchartsBar /> -->
 </template>

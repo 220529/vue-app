@@ -1,11 +1,11 @@
 <!-- ParentComponent.vue -->
 <script setup lang="ts">
-import { reactive, computed } from 'vue';
-import ChildComponent from './ChildComponent.vue';
+import { reactive, computed } from "vue";
+import ChildComponent from "./ChildComponent.vue";
 
 const state = reactive({
   count: 0,
-  text: 'Hello',
+  text: "Hello",
 });
 
 // 定义一个响应式对象
@@ -19,7 +19,7 @@ function increment() {
 }
 
 function changeText() {
-  state.text = state.text === 'Hello' ? 'World' : 'Hello';
+  state.text = state.text === "Hello" ? "World" : "Hello";
 }
 </script>
 

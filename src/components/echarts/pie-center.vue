@@ -1,10 +1,10 @@
 <template>
-  <div id="chart" ref="chartRef" style="width: 500px; height: 400px;"></div>
+  <div id="chart" ref="chartRef" style="width: 500px; height: 400px"></div>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
-import * as echarts from 'echarts';
+import { ref, onMounted } from "vue";
+import * as echarts from "echarts";
 
 const chartRef = ref<HTMLDivElement | null>(null);
 
@@ -14,7 +14,7 @@ onMounted(() => {
 
     const option = {
       tooltip: {
-        trigger: 'item',
+        trigger: "item",
         formatter: (params: any) => {
           // 动态显示选中项的信息
           return `
@@ -28,15 +28,15 @@ onMounted(() => {
       },
       series: [
         {
-          type: 'pie',
-          radius: ['40%', '70%'],
+          type: "pie",
+          radius: ["40%", "70%"],
           avoidLabelOverlap: false,
           label: {
             show: true,
-            position: 'center',
+            position: "center",
             formatter: () => {
-              return '';
-            }
+              return "";
+            },
           },
           emphasis: {
             label: {
@@ -47,23 +47,23 @@ onMounted(() => {
               rich: {
                 value: {
                   fontSize: 22,
-                  fontWeight: 'bold',
-                  color: '#17233E',
+                  fontWeight: "bold",
+                  color: "#17233E",
                 },
                 name: {
                   fontSize: 14,
-                  color: '#9E9E9E',
+                  color: "#9E9E9E",
                 },
               },
             },
           },
           data: [
-            { value: 1048, name: '定金' },
-            { value: 735, name: '合同款' },
-            { value: 580, name: '设计费' },
-            { value: 484, name: '套外款' },
-            { value: 300, name: '选配款' },
-            { value: 200, name: '增项款' },
+            { value: 1048, name: "定金" },
+            { value: 735, name: "合同款" },
+            { value: 580, name: "设计费" },
+            { value: 484, name: "套外款" },
+            { value: 300, name: "选配款" },
+            { value: 200, name: "增项款" },
           ],
         },
       ],

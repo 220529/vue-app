@@ -1,7 +1,7 @@
 <template>
   <a-button type="primary" @click="showDrawer">Open</a-button>
   <a-drawer
-  :destroyOnClose="false"
+    :destroyOnClose="false"
     v-model:visible="open"
     class="custom-class"
     root-class-name="root-class-name"
@@ -17,16 +17,15 @@
   </a-drawer>
 </template>
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 // import {AntdDrawer} from "ant-design-vue"
 const open = ref<boolean>(false);
 
 const afterOpenChange = (bool: boolean) => {
-  console.log('open', bool);
+  console.log("open", bool);
 };
 
 const showDrawer = () => {
   open.value = true;
 };
 </script>
-

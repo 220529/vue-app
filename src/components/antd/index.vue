@@ -10,12 +10,12 @@ import AntdTooltip from "@/components/antd/tooltip.vue";
 </script>
 
 <template>
-    <!-- <AntdIcon /> -->
-    <!-- <AntdRedio /> -->
-    <!-- <AntdTable /> -->
-    <!-- <AntdModal /> -->
-    <!-- <AntdForm /> -->
-    <!-- <AntdTimeline /> -->
-    <!-- <AntdDrawer /> -->
-    <AntdTooltip />
+  <!-- <AntdIcon /> -->
+  <!-- <AntdRedio /> -->
+  <!-- <AntdTable /> -->
+  <!-- <AntdModal /> -->
+  <!-- <AntdForm /> -->
+  <!-- <AntdTimeline /> -->
+  <!-- <AntdDrawer /> -->
+  <AntdTooltip />
 </template>

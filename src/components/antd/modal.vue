@@ -1,5 +1,5 @@
 <template>
-  <CustomModal 
+  <CustomModal
     title="自定义标题"
     @cancel="closeModal"
     v-model:visible="isModalVisible"
@@ -10,8 +10,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import CustomModal from "./CustomModal.vue"
+import { ref } from "vue";
+import CustomModal from "./CustomModal.vue";
 
 const isModalVisible = ref(false);
 

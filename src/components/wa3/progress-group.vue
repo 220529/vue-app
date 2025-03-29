@@ -1,12 +1,48 @@
 <script setup lang="ts">
-import Progress from "./progress.vue"
+import Progress from "./progress.vue";
 
 const items = [
-  { id: 1, amount: 2376890, progress: 60, amountColor: "#5F7EFF", describe: "个人产值（元）", abilityIcon: "/wa3/person.png", progressColor: "#8898DC", progressBackgroundColor: "#D3DBFF" },
-  { id: 2, amount: 2376890, progress: 80, amountColor: "#FF5B58", describe: "均单值（元）", abilityIcon: "/wa3/m2.png", progressColor: "#FFA5A5", progressBackgroundColor: "#FFA5A5" },
-  { id: 3, amount: 2376890, progress: 20, amountColor: "#4FA6B8", describe: "单位平米造价（元）", abilityIcon: "/wa3/average.png", progressColor: "#4FA6B8", progressBackgroundColor: "#88CEDC" },
-  { id: 4, amount: 2376890, progress: 70, amountColor: "#8C6ED4", describe: "总持单量", abilityIcon: "/wa3/count.png", progressColor: "#B99EFA", progressBackgroundColor: "#B99EFA" }
-]
+  {
+    id: 1,
+    amount: 2376890,
+    progress: 60,
+    amountColor: "#5F7EFF",
+    describe: "个人产值（元）",
+    abilityIcon: "/wa3/person.png",
+    progressColor: "#8898DC",
+    progressBackgroundColor: "#D3DBFF",
+  },
+  {
+    id: 2,
+    amount: 2376890,
+    progress: 80,
+    amountColor: "#FF5B58",
+    describe: "均单值（元）",
+    abilityIcon: "/wa3/m2.png",
+    progressColor: "#FFA5A5",
+    progressBackgroundColor: "#FFA5A5",
+  },
+  {
+    id: 3,
+    amount: 2376890,
+    progress: 20,
+    amountColor: "#4FA6B8",
+    describe: "单位平米造价（元）",
+    abilityIcon: "/wa3/average.png",
+    progressColor: "#4FA6B8",
+    progressBackgroundColor: "#88CEDC",
+  },
+  {
+    id: 4,
+    amount: 2376890,
+    progress: 70,
+    amountColor: "#8C6ED4",
+    describe: "总持单量",
+    abilityIcon: "/wa3/count.png",
+    progressColor: "#B99EFA",
+    progressBackgroundColor: "#B99EFA",
+  },
+];
 </script>
 
 <template>
@@ -34,9 +70,9 @@ const items = [
 .designer {
   padding: 15px 10px 15px;
   border-radius: 8px;
-  background: linear-gradient(0deg, #292730, #292730), #FFFFFF;
-  border: 1px solid #D7C4A1;
-  
+  background: linear-gradient(0deg, #292730, #292730), #ffffff;
+  border: 1px solid #d7c4a1;
+
   display: flex;
   flex-direction: column;
 
@@ -62,7 +98,7 @@ const items = [
       line-height: 21px;
       padding: 0 8px;
       border-radius: 4px;
-      border: 1px solid #D7C4A1;
+      border: 1px solid #d7c4a1;
 
       img {
         width: 10.79px;
@@ -74,7 +110,7 @@ const items = [
         font-family: Source Han Sans;
         font-size: 16px;
         font-weight: bold;
-        color: #D7C4A1;
+        color: #d7c4a1;
       }
     }
 
@@ -86,7 +122,7 @@ const items = [
         font-size: 18px;
         font-weight: bold;
         font-variation-settings: "opsz" auto;
-        color: #FFFFFF;
+        color: #ffffff;
       }
 
       p {
@@ -97,7 +133,7 @@ const items = [
         line-height: 21px;
         padding: 0 6px;
         border-radius: 4px;
-        background: #D7C4A1;
+        background: #d7c4a1;
       }
     }
   }

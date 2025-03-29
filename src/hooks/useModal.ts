@@ -1,6 +1,6 @@
 // useModal.ts
 import { ref } from "vue";
-import ModalComponent from "@/components/ModalComponent.vue";
+import ModalComponent from "@/components/custom/ModalComponent.vue";
 
 export function useModal() {
   const visible = ref(false);
@@ -19,6 +19,6 @@ export function useModal() {
     visible,
     open,
     close,
-    Modal: <ModalComponent />,
+    Modal: ModalComponent,
   };
 }

@@ -1,13 +1,13 @@
 <script setup lang="ts">
-
 interface Props {
   progress: number; // 进度
   duration: number; // 过度时间
   progressColor: string; // 进度条色值
-  progressBackgroundColor: string // 进度条底色
+  progressBackgroundColor: string; // 进度条底色
 }
 
-const {progress, duration, progressColor, progressBackgroundColor} = defineProps<Props>()
+const { progress, duration, progressColor, progressBackgroundColor } =
+  defineProps<Props>();
 </script>
 
 <template>
@@ -34,7 +34,7 @@ const {progress, duration, progressColor, progressBackgroundColor} = defineProps
   &-space {
     width: 2px;
     height: 10px;
-    background-color: v-bind('progressBackgroundColor');
+    background-color: v-bind("progressBackgroundColor");
   }
 }
 
@@ -49,7 +49,7 @@ const {progress, duration, progressColor, progressBackgroundColor} = defineProps
   &-chunk {
     width: 100%;
     height: 100%;
-    border: 2px solid v-bind('progressBackgroundColor');
+    border: 2px solid v-bind("progressBackgroundColor");
     left: -5px;
     position: relative;
     background-color: white;
@@ -60,7 +60,7 @@ const {progress, duration, progressColor, progressBackgroundColor} = defineProps
   &-widget {
     width: 0%;
     height: 100%;
-    background: v-bind('progressColor');
+    background: v-bind("progressColor");
     position: absolute;
     animation: fillProgress v-bind('duration + "s"') ease-out forwards;
   }

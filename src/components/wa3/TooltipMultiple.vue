@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { defineProps, computed } from 'vue';
+import { defineProps, computed } from "vue";
 const { text } = defineProps<{
-  text: string
-}>()
+  text: string;
+}>();
 const realText = computed(() => {
-  return text.split(":")
-})
+  return text.split(":");
+});
 </script>
 
 <template>
@@ -51,7 +51,7 @@ const realText = computed(() => {
       line-height: 16px;
       letter-spacing: 0px;
 
-      color: #FFFFFF;
+      color: #ffffff;
     }
   }
 }

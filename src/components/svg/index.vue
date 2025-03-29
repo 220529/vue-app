@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Empty from './Empty.vue'
+import Empty from "./Empty.vue";
 </script>
 
 <template>
-    <Empty />
+  <Empty />
 </template>
