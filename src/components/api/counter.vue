@@ -8,6 +8,7 @@ const count = ref(0);
 
 <template>
   <div class="card">
+    <span>{{ msg }}</span>
     <button v-log type="button" @click="count++">count is {{ count }}</button>
   </div>
 </template>

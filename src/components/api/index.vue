@@ -1,15 +1,15 @@
 <script setup lang="ts">
-// import Counter from './counter.vue'
+import Counter from "./counter.vue";
 // import Reactive from "./reactive/index.vue"
 // import Computed from './computed/index.vue'
-import ClassName from "./className.vue";
+// import ClassName from "./className.vue";
 // import TrackDirectives from './track-directives.vue'
 </script>
 
 <template>
-  <!-- <Counter /> -->
+  <Counter msg="Hello vue3" />
   <!-- <Reactive /> -->
   <!-- <Computed /> -->
-  <ClassName text="结束" color="red" />
+  <!-- <ClassName text="结束" color="red" /> -->
   <!-- <TrackDirectives /> -->
 </template>
