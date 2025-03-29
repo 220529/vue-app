@@ -14,7 +14,7 @@ declare module 'vue' {
     Child: typeof import('./src/components/switch/child.vue')['default']
     ChildComponent: typeof import('./src/components/computed/ChildComponent.vue')['default']
     Computed: typeof import('./src/components/computed/index.vue')['default']
-    copy: typeof import('./src/components/wa3/progress copy.vue')['default']
+    copy: typeof import('./src/components/vuetifyjs/v1 copy.vue')['default']
     Counter: typeof import('./src/components/Counter.vue')['default']
     CountUpTimer: typeof import('./src/components/time/CountUpTimer.vue')['default']
     CustomModal: typeof import('./src/components/antd/CustomModal.vue')['default']
@@ -48,7 +48,11 @@ declare module 'vue' {
     TooltipMultiple: typeof import('./src/components/TooltipMultiple.vue')['default']
     TooltipMultipleApp: typeof import('./src/components/TooltipMultipleApp.vue')['default']
     Univer: typeof import('./src/components/univer/index.vue')['default']
+    V1: typeof import('./src/components/vuetifyjs/v1.vue')['default']
+    V2: typeof import('./src/components/vuetifyjs/v2.vue')['default']
     Vue3CountTo: typeof import('./src/components/vue3-count-to.vue')['default']
+    Vuetifyjs: typeof import('./src/components/vuetifyjs/index.vue')['default']
+    VxeTable: typeof import('./src/components/vxe-table/index.vue')['default']
     W: typeof import('./src/components/wa3/w.vue')['default']
   }
 }

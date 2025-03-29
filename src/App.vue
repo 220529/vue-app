@@ -32,15 +32,18 @@
 
 // import Designer from "@/components/wa3/designer.vue";
 // import Selector from "@/components/Selector.vue";
-import UniverApp from "@/components/univer/index.vue"
+// import UniverApp from "@/components/univer/index.vue"
+// import VuetifyjsV1App from "@/components/vuetifyjs/v1.vue"
+// import VuetifyjsV2App from "@/components/vuetifyjs/v2.vue"
+import VxeTableApp from "@/components/vxe-table/index.vue"
 </script>
 
 <template>
-  <UniverApp />
+  <!-- <UniverApp /> -->
+  <!-- <VuetifyjsV1App /> -->
+  <!-- <VuetifyjsV2App /> -->
+  <VxeTableApp />
   <!-- <Selector /> -->
-  <!-- <ReactiveaApp /> -->
-
-  <!-- <Counter msg="Vite" /> -->
   <!-- <ListComponent /> -->
   <!-- <LazyLoadGallery /> -->
   <!-- <SwitchApp /> -->
