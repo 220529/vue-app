@@ -81,4 +81,28 @@ app.use(VueLazyload, {
   attempt: 1, // 尝试加载的次数
 });
 
-app.mount("#app");
+if (window.__POWERED_BY_WUJIE__) {
+  window.__WUJIE_MOUNT = () => {
+    console.log("vue3.mount");
+    app.mount("#app");
+  };
+  window.__WUJIE_UNMOUNT = () => {
+    console.log("vue3.unmount");
+    app.unmount();
+  };
+} else {
+  app.mount("#app");
+}
+
+declare global {
+  interface Window {
+    // 是否存在无界
+    __POWERED_BY_WUJIE__?: boolean;
+    // 子应用mount函数
+    __WUJIE_MOUNT: () => void;
+    // 子应用unmount函数
+    __WUJIE_UNMOUNT: () => void | Promise<void>;
+    // 子应用无界实例
+    __WUJIE: { mount: () => void };
+  }
+}
