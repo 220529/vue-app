@@ -6,7 +6,8 @@
 // import AntdForm from "@/components/antd/form.vue";
 // import AntdTimeline from "@/components/antd/timeline.vue";
 // import AntdDrawer from "@/components/antd/drawer.vue";
-import AntdTooltip from "@/components/antd/tooltip.vue";
+// import AntdTooltip from "@/components/antd/tooltip.vue";
+import AntdButton from "@/components/antd/button.vue";
 </script>
 
 <template>
@@ -17,5 +18,6 @@ import AntdTooltip from "@/components/antd/tooltip.vue";
   <!-- <AntdForm /> -->
   <!-- <AntdTimeline /> -->
   <!-- <AntdDrawer /> -->
-  <AntdTooltip />
+  <!-- <AntdTooltip /> -->
+  <AntdButton />
 </template>

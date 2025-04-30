@@ -8,7 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     A: (typeof import("./src/components/custom/a.vue"))["default"]
-    AButton: (typeof import("ant-design-vue/es"))["Button"]
+    AButton: typeof import('ant-design-vue/es')['Button']
     ADrawer: (typeof import("ant-design-vue/es"))["Drawer"]
     AForm: (typeof import("ant-design-vue/es"))["Form"]
     AFormItem: (typeof import("ant-design-vue/es"))["FormItem"]
@@ -23,8 +23,9 @@ declare module 'vue' {
     ATable: (typeof import("ant-design-vue/es"))["Table"]
     ATimeline: (typeof import("ant-design-vue/es"))["Timeline"]
     ATimelineItem: (typeof import("ant-design-vue/es"))["TimelineItem"]
-    ATooltip: (typeof import("ant-design-vue/es"))["Tooltip"]
+    ATooltip: typeof import('ant-design-vue/es')['Tooltip']
     Bar: typeof import('./src/components/echarts/bar.vue')['default']
+    Button: typeof import('./src/components/antd/button.vue')['default']
     Child: typeof import('./src/components/wa3/switch/child.vue')['default']
     ChildComponent: typeof import('./src/components/api/computed/ChildComponent.vue')['default']
     ClassName: typeof import('./src/components/api/className.vue')['default']
@@ -58,6 +59,8 @@ declare module 'vue' {
     Reactive: typeof import('./src/components/api/reactive/index.vue')['default']
     Redio: typeof import('./src/components/antd/redio.vue')['default']
     Render: typeof import('./src/components/antd/render.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
     Selector: typeof import('./src/components/wa3/Selector.vue')['default']
     Svg: typeof import('./src/components/svg/index.vue')['default']
     Switch: typeof import('./src/components/wa3/switch/index.vue')['default']

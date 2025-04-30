@@ -40,6 +40,8 @@ import "./mock";
 import "./mock/customer.js";
 import directives from "./directives";
 
+import router from "@/router";
+
 const vuetify = createVuetify({
   components: {
     ...components,
@@ -81,6 +83,8 @@ app.use(VueLazyload, {
   attempt: 1, // 尝试加载的次数
 });
 
+app.use(router); // 使用路由
+
 if (window.__POWERED_BY_WUJIE__) {
   window.__WUJIE_MOUNT = () => {
     console.log("vue3.mount");
@@ -104,5 +108,7 @@ declare global {
     __WUJIE_UNMOUNT: () => void | Promise<void>;
     // 子应用无界实例
     __WUJIE: { mount: () => void };
+    // 注入对象
+    $wujie: { [key: string]: any };
   }
 }
