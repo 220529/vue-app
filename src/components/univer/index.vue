@@ -31,6 +31,13 @@ import "@univerjs/presets/lib/styles/preset-sheets-drawing.css";
 import "@univerjs/presets/lib/styles/preset-sheets-filter.css";
 import "@univerjs/presets/lib/styles/preset-sheets-hyper-link.css";
 
+// import { UniverSheetsDrawingPreset } from "@univerjs/presets/preset-sheets-drawing";
+// import UniverPresetSheetsDrawingZhCN from "@univerjs/presets/preset-sheets-drawing/locales/zh-CN";
+
+import { UniverSheetsAdvancedPreset } from "@univerjs/presets/preset-sheets-advanced";
+import UniverPresetSheetsAdvancedZhCN from "@univerjs/presets/preset-sheets-advanced/locales/zh-CN";
+import "@univerjs/presets/lib/styles/preset-sheets-advanced.css";
+
 const { univerAPI } = createUniver({
   locale: LocaleType.ZH_CN,
   locales: {
@@ -41,7 +48,9 @@ const { univerAPI } = createUniver({
       sheetsDataValidationZhCN,
       sheetsDrawingZhCN,
       sheetsFilterZhCN,
-      sheetsHyperLinkZhCN
+      sheetsHyperLinkZhCN,
+      // UniverPresetSheetsDrawingZhCN,
+      UniverPresetSheetsAdvancedZhCN
     ),
   },
   theme: defaultTheme,
@@ -52,6 +61,7 @@ const { univerAPI } = createUniver({
     UniverSheetsDrawingPreset(),
     UniverSheetsFilterPreset(),
     UniverSheetsHyperLinkPreset(),
+    UniverSheetsAdvancedPreset(),
   ],
 });
 

@@ -16,6 +16,11 @@ const routes = [
     name: "univer",
     component: () => import("@/components/univer/index.vue"),
   },
+  {
+    path: "/excel/:id",
+    name: "excel",
+    component: () => import("@/components/exceljs/index.vue"),
+  },
 ];
 
 const router = createRouter({
