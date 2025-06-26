@@ -84,7 +84,7 @@ const updateChart = () => {
         },
         data: currentOption,
         itemStyle: {
-          color: function (params) {
+          color: function (params: any) {
             if (params.name === "利润") {
               return "#65CCBE";
             }

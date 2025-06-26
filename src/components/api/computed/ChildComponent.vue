@@ -9,7 +9,7 @@ const { data } = defineProps({
 
 <template>
   <div>
-    <p>Double Count: {{ data.doubleCount }}</p>
-    <p>Upper Text: {{ data.upperText }}</p>
+    <p>Double Count: {{ data?.doubleCount }}</p>
+    <p>Upper Text: {{ data?.upperText }}</p>
   </div>
 </template>

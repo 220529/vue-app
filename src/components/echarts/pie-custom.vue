@@ -4,8 +4,8 @@ import { onMounted } from "vue";
 
 onMounted(() => {
   // 获取canvas元素和绘图上下文
-  const canvas = document.getElementById("progressRing");
-  const ctx = canvas.getContext("2d");
+  const canvas = document.getElementById("progressRing") as HTMLCanvasElement;
+  const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
 
   // 圆环的中心坐标
   const centerX = canvas.width / 2;

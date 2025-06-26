@@ -13,6 +13,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import * as echarts from "echarts";
+import type { BarSeriesOption } from "echarts";
 
 // 辅助函数，用于计算文本的宽度（简单模拟，实际情况可能更复杂）
 function getTextWidth(text: string, fontSize: number): number {
@@ -64,13 +65,13 @@ const updateChart = () => {
   const yAxisData = currentOption.map((item) => item.sales);
   const typeData = currentOption.map((item) => item.type);
 
-  const seriesData = [
+  const seriesData: BarSeriesOption[] = [
     {
       type: "bar",
       barWidth: "20%",
       data: yAxisData,
       itemStyle: {
-        color: function (params) {
+        color: function (params: any) {
           const currentType = typeData[params.dataIndex];
           if (currentType === "main") {
             return "#3175FB";
@@ -83,7 +84,7 @@ const updateChart = () => {
     },
   ];
 
-  const option: echarts.EChartOption = {
+  const option: echarts.EChartsOption = {
     xAxis: {
       type: "category",
       data: xAxisData,
@@ -117,9 +118,11 @@ const updateChart = () => {
       },
     },
     series: seriesData,
+    // @ts-ignore
     tooltip: {
       trigger: "axis",
-      formatter: (params: echarts.TooltipAxisFormatterParams[]) => {
+      // @ts-ignore
+      formatter: (params: echarts.CallbackDataParams[]) => {
         let tip = "";
         params.forEach((param) => {
           const value = param.value;

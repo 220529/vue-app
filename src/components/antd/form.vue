@@ -38,7 +38,7 @@ const formState = ref({
   mobile: "",
 });
 
-const onSearch = (e) => {
+const onSearch = (e: any) => {
   console.log("onSearch", formState, e);
 };
 </script>

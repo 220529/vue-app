@@ -21,6 +21,16 @@ const routes = [
     name: "excel",
     component: () => import("@/components/exceljs/index.vue"),
   },
+  {
+    path: "/vxe-table/:id",
+    name: "vxe-table",
+    component: () => import("@/components/vxe-table/index.vue"),
+  },
+  {
+    path: "/env",
+    name: "env",
+    component: () => import("@/components/env/index.vue"),
+  },
 ];
 
 const router = createRouter({

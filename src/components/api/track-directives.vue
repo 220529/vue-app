@@ -21,7 +21,7 @@ import { getUserList } from "@/api"; // 引入 API
 export default {
   name: "ListComponent",
   setup() {
-    const users = ref([]);
+    const users = ref<any>([]);
 
     const fetchData = async () => {
       try {

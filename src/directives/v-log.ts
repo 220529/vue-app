@@ -13,7 +13,7 @@ const vLog: Directive = {
     });
     observer.observe(el);
   },
-  unmounted(el) {
+  unmounted() {
     // 这里不需要再次声明 observer
   },
 };
