@@ -31,6 +31,7 @@ declare module 'vue' {
     Modal: typeof import('./src/components/antd/modal.vue')['default']
     ModalComponent: typeof import('./src/components/custom/ModalComponent.vue')['default']
     Npm: typeof import('./src/components/npm/index.vue')['default']
+    OnMounted: typeof import('./src/components/api/onMounted/index.vue')['default']
     Pie: typeof import('./src/components/echarts/pie.vue')['default']
     PieCenter: typeof import('./src/components/echarts/pie-center.vue')['default']
     PieCustom: typeof import('./src/components/echarts/pie-custom.vue')['default']
