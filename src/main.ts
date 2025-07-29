@@ -1,5 +1,7 @@
 import { createApp } from "vue";
 import VueLazyload from "vue-lazyload";
+import ElementPlus from "element-plus";
+import "element-plus/dist/index.css";
 
 import "vuetify/styles";
 import { createVuetify } from "vuetify";
@@ -83,6 +85,7 @@ app.use(VueLazyload, {
   attempt: 1, // 尝试加载的次数
 });
 
+app.use(ElementPlus);
 app.use(router); // 使用路由
 
 if (window.__POWERED_BY_WUJIE__) {

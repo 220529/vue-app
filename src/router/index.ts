@@ -31,6 +31,18 @@ const routes = [
     name: "env",
     component: () => import("@/components/env/index.vue"),
   },
+  {
+    path: "/element-plus",
+    name: "element-plus",
+    component: () => import("@/components/element-plus/index.vue"),
+    children: [
+      {
+        path: "date",
+        name: "element-plus-date",
+        component: () => import("@/components/element-plus/date.vue"),
+      },
+    ],
+  },
 ];
 
 const router = createRouter({
